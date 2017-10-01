@@ -4,13 +4,9 @@ sudo: required
 dist: xenial
 services:
   - docker
-language: generic
+language: cpp
 compiler:
   - g++
-notifications:
-  email:
-    recipients:
-      - gm130s@gmail.com
 env:
   matrix:
     - ROS_DISTRO="kinetic"  ROS_REPOSITORY_PATH=http://packages.ros.org/ros/ubuntu NOT_TEST_INSTALL=true
